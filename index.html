@@ -7,31 +7,290 @@
   <meta name="theme-color" content="#111410">
   <title>Chason — 构建、思考与分享</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header wrap">
-    <a class="brand" href="#top" aria-label="chason 首页"><span class="brand-mark">✳</span> chason<span class="brand-dot">.</span></a>
-    <nav aria-label="主导航"><a href="#about">关于</a><a href="#writing">文章</a><a href="#work">作品</a><a href="#contact">联系</a></nav>
-    <a class="header-link" href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="M12 2.2v19.6M2.2 12h19.6M5.07 5.07l13.86 13.86M18.93 5.07L5.07 18.93" stroke="currentColor" stroke-width="2.1" stroke-linecap="butt" fill="none"/>
+      </symbol>
+      <symbol id="icon-spark-thin" viewBox="0 0 24 24">
+        <path d="M12 1.8v20.4M1.8 12h20.4M4.79 4.79l14.42 14.42M19.21 4.79L4.79 19.21" stroke="currentColor" stroke-width="1.2" stroke-linecap="butt" fill="none"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header">
+      <a class="brand" href="#top" aria-label="chason 首页">
+        <svg class="brand-mark" aria-hidden="true"><use href="#icon-spark"/></svg>
+        <span>chason<span class="brand-dot">.</span></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#writing">文章</a>
+        <a href="#work">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="header-link" href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">
+        GITHUB <span aria-hidden="true">↗</span>
+      </a>
+    </div>
   </header>
+
   <main id="top">
     <section class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> 独立思考，持续创造 <span class="divider">/</span> CHASON'S SPACE</p>
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          独立思考，持续创造
+          <span class="divider" aria-hidden="true">/</span>
+          CHASON'S SPACE
+        </p>
         <h1>用代码构建，<br><span>用 AI 探索。</span></h1>
-        <p class="hero-desc">你好，我是 Chason。一名有 10 年以上行业经验的程序员，正在 All in AI。这里记录我的思考、创作，以及那些从想法走向现实的作品。</p>
-        <div class="hero-actions"><a class="button primary" href="#work">探索我的作品 <span>↗</span></a><a class="button text-button" href="#about">更多关于我 <span>↓</span></a></div>
+        <p class="hero-desc">
+          你好，我是 Chason。一名有 10 年以上行业经验的程序员，正在 All in AI。这里记录我的思考、创作，以及那些从想法走向现实的作品。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">
+            探索我的作品 <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button text-button" href="#about">
+            更多关于我 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="art-core"><span>✳</span></div><span class="art-label label-top">IDEAS IN MOTION <i>↗</i></span><span class="art-label label-bottom">AETHER SPACE <i>01 — ∞</i></span><span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span></div>
-      <div class="hero-foot"><span>SCROLL TO EXPLORE <span>↓</span></span><span>CODE <b>✳</b> IDEAS <b>✳</b> AI</span></div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-one"><span class="orbit-node"></span></div>
+        <div class="orbit orbit-two"><span class="orbit-node"></span></div>
+        <div class="orbit orbit-three"></div>
+        <div class="art-core">
+          <svg class="art-spark"><use href="#icon-spark-thin"/></svg>
+        </div>
+        <span class="art-label label-top">IDEAS IN MOTION <i>↗</i></span>
+        <span class="art-label label-bottom">AETHER SPACE <i>01 — ∞</i></span>
+        <span class="art-cross cross-a">+</span>
+        <span class="art-cross cross-b">+</span>
+      </div>
+
+      <div class="hero-foot">
+        <span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span>
+        <span class="hero-foot-tags">
+          CODE
+          <svg class="inline-spark" aria-hidden="true"><use href="#icon-spark"/></svg>
+          IDEAS
+          <svg class="inline-spark" aria-hidden="true"><use href="#icon-spark"/></svg>
+          AI
+        </span>
+      </div>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="wrap ticker-inner"><span>CODE</span><b>✳</b><span>PRODUCT</span><b>✳</b><span>CREATIVITY</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>ALWAYS BUILDING</span></div></div>
-    <section id="about" class="section wrap about-section"><div class="section-label"><span>01 / ABOUT</span><span>认识我</span></div><div class="about-content"><h2>好奇是起点，<br><em>创造是答案。</em></h2><div class="about-copy"><p>从代码到产品，从记录到创造。我始终相信，技术真正有意思的地方，是把脑海里的想法变成可以被看见、被使用的东西。</p><p>现在，我把更多时间投入 AI：探索新的工具和工作方式，也尝试把这些发现变成有用的内容与产品。</p><div class="tags"><span>程序员</span><span>产品思维</span><span>AI 探索者</span><span>内容创作者</span></div></div></div></section>
-    <section id="writing" class="section wrap"><div class="section-heading"><div><p class="section-kicker">02 / WRITING &amp; IDEAS</p><h2>把思考<span class="accent">，</span>留下来。</h2></div><p>关于技术、产品和 AI 的观察与记录。<br>持续输入，也认真输出。</p></div><div class="writing-grid"><div class="writing-intro"><span class="mini-icon">✳</span><p>GOOD IDEAS<br>ARE MEANT<br>TO BE SHARED<span class="accent">.</span></p><small>THINK / WRITE / SHARE</small></div><div class="writing-list"><article class="writing-row"><div><span class="item-type">01 / AI</span><h3>探索 AI 的无限可能</h3><p>关于 AI 工具、工作方式与实践的思考。</p></div><span class="pending">文章待补充</span></article><article class="writing-row"><div><span class="item-type">02 / TECHNOLOGY</span><h3>技术与产品的日常</h3><p>记录技术实践，以及产品背后的思考。</p></div><span class="pending">文章待补充</span></article><article class="writing-row"><div><span class="item-type">03 / KNOWLEDGE</span><h3>让知识生长</h3><p>把零散的发现，整理成有价值的积累。</p></div><span class="pending">文章待补充</span></article></div></div></section>
-    <section id="work" class="section wrap work-section"><div class="section-heading"><div><p class="section-kicker">03 / SELECTED WORK</p><h2>想法<span class="accent">，</span>落地中。</h2></div><p>从一个念头开始，<br>把想象变成真实可用的东西。</p></div><div class="project-grid"><article class="project-card project-main"><div class="project-top"><span>PERSONAL SPACE / 01</span><span>↗</span></div><div class="project-symbol" aria-hidden="true">✳</div><div class="project-bottom"><div><span class="project-category">PERSONAL WEBSITE</span><h3>Aether Space</h3><p>一个容纳代码、想法、知识与 AI 创作的个人数字空间。</p></div><span class="project-pill">持续构建中</span></div></article><article class="project-card project-note"><div class="project-top"><span>MORE TO COME / 02</span><span>＋</span></div><div class="note-content"><span class="note-number">∞</span><h3>下一个想法，<br>正在路上。</h3><p>更多项目与作品，敬请期待。</p></div></article></div><a class="github-link" href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">在 GitHub 探索更多 <span>↗</span></a></section>
-    <section id="contact" class="contact"><div class="wrap contact-inner"><div><p class="section-kicker">04 / LET'S CONNECT</p><h2>保持好奇，<br><em>保持联系。</em></h2><p class="contact-desc">如果你也对技术、产品或 AI 感兴趣，<br>欢迎关注我的公众号，一起交流、一起探索。</p><div class="contact-actions"><span class="contact-chip">公众号信息待补充</span><span class="contact-chip">联系方式待补充</span><a href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div></div><div class="contact-art" aria-hidden="true"><span>✳</span><small>LET'S MAKE<br>SOMETHING<br>MEANINGFUL.</small></div></div></section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>CODE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>PRODUCT</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>CREATIVITY</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ALWAYS BUILDING</span>
+          <svg class="ticker-spark ticker-tail-spark"><use href="#icon-spark"/></svg>
+          <span class="ticker-repeat">
+            <span>CODE</span>
+            <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+            <span>PRODUCT</span>
+            <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+            <span>CREATIVITY</span>
+            <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+            <span>ARTIFICIAL INTELLIGENCE</span>
+            <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+            <span>ALWAYS BUILDING</span>
+            <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          </span>
+        </div>
+        <div class="ticker-group ticker-duplicate">
+          <span>CODE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>PRODUCT</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>CREATIVITY</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ALWAYS BUILDING</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>CODE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>PRODUCT</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>CREATIVITY</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+          <span>ALWAYS BUILDING</span>
+          <svg class="ticker-spark"><use href="#icon-spark"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="section wrap about-section">
+      <div class="section-label">
+        <span>01 / ABOUT</span>
+        <span>认识我</span>
+      </div>
+      <div class="about-content">
+        <h2>好奇是起点，<br><em>创造是答案。</em></h2>
+        <div class="about-copy">
+          <p>从代码到产品，从记录到创造。我始终相信，技术真正有意思的地方，是把脑海里的想法变成可以被看见、被使用的东西。</p>
+          <p>现在，我把更多时间投入 AI：探索新的工具和工作方式，也尝试把这些发现变成有用的内容与产品。</p>
+          <div class="tags">
+            <span>程序员</span>
+            <span>产品思维</span>
+            <span>AI 探索者</span>
+            <span>内容创作者</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing" class="section wrap">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">02 / WRITING &amp; IDEAS</p>
+          <h2>把思考<span class="accent">，</span>留下来。</h2>
+        </div>
+        <p>关于技术、产品和 AI 的观察与记录。<br>持续输入，也认真输出。</p>
+      </div>
+
+      <div class="writing-grid">
+        <div class="writing-intro">
+          <svg class="mini-icon" aria-hidden="true"><use href="#icon-spark"/></svg>
+          <p>GOOD IDEAS<br>ARE MEANT<br>TO BE SHARED<span class="accent">.</span></p>
+          <small>THINK / WRITE / SHARE</small>
+        </div>
+
+        <div class="writing-list">
+          <article class="writing-row">
+            <div>
+              <span class="item-type">01 / AI</span>
+              <h3>探索 AI 的无限可能</h3>
+              <p>关于 AI 工具、工作方式与实践的思考。</p>
+            </div>
+            <span class="pending">文章待补充</span>
+          </article>
+          <article class="writing-row">
+            <div>
+              <span class="item-type">02 / TECHNOLOGY</span>
+              <h3>技术与产品的日常</h3>
+              <p>记录技术实践，以及产品背后的思考。</p>
+            </div>
+            <span class="pending">文章待补充</span>
+          </article>
+          <article class="writing-row">
+            <div>
+              <span class="item-type">03 / KNOWLEDGE</span>
+              <h3>让知识生长</h3>
+              <p>把零散的发现，整理成有价值的积累。</p>
+            </div>
+            <span class="pending">文章待补充</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section wrap work-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">03 / SELECTED WORK</p>
+          <h2>想法<span class="accent">，</span>落地中。</h2>
+        </div>
+        <p>从一个念头开始，<br>把想象变成真实可用的东西。</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-main">
+          <div class="project-top">
+            <span>PERSONAL SPACE / 01</span>
+            <span class="card-status"><i aria-hidden="true"></i>CURRENT</span>
+          </div>
+          <div class="project-symbol" aria-hidden="true">
+            <svg><use href="#icon-spark-thin"/></svg>
+          </div>
+          <div class="project-bottom">
+            <div>
+              <span class="project-category">PERSONAL WEBSITE</span>
+              <h3>Aether Space</h3>
+              <p>一个容纳代码、想法、知识与 AI 创作的个人数字空间。</p>
+            </div>
+            <span class="project-pill">持续构建中</span>
+          </div>
+        </article>
+
+        <article class="project-card project-note">
+          <div class="project-top">
+            <span>MORE TO COME / 02</span>
+            <span class="card-plus" aria-hidden="true">+</span>
+          </div>
+          <div class="project-symbol note-symbol" aria-hidden="true">∞</div>
+          <div class="project-bottom">
+            <div>
+              <span class="project-category">UPCOMING</span>
+              <h3>下一个想法，<br>正在路上。</h3>
+              <p>更多项目与作品，敬请期待。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <a class="github-link" href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">
+        <span>在 GitHub 探索更多</span>
+        <span class="link-arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="section-kicker">04 / LET'S CONNECT</p>
+          <h2>保持好奇，<br><em>保持联系。</em></h2>
+          <p class="contact-desc">
+            如果你也对技术、产品或 AI 感兴趣，<br>
+            欢迎关注我的公众号，一起交流、一起探索。
+          </p>
+          <div class="contact-actions">
+            <a class="contact-cta" href="https://github.com/Chason-gyc" target="_blank" rel="noopener noreferrer">
+              GITHUB <span aria-hidden="true">↗</span>
+            </a>
+            <span class="contact-chip">公众号信息待补充</span>
+            <span class="contact-chip">联系方式待补充</span>
+          </div>
+        </div>
+        <div class="contact-art" aria-hidden="true">
+          <svg><use href="#icon-spark-thin"/></svg>
+          <small>LET'S MAKE<br>SOMETHING<br>MEANINGFUL.</small>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="wrap footer"><a class="brand" href="#top"><span class="brand-mark">✳</span> chason<span class="brand-dot">.</span></a><span>BUILD WITH CURIOSITY.</span><a href="#top">回到顶部 ↑</a></footer>
+
+  <footer class="wrap footer">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <svg class="brand-mark" aria-hidden="true"><use href="#icon-spark"/></svg>
+      <span>chason<span class="brand-dot">.</span></span>
+    </a>
+    <span class="footer-note">BUILD WITH CURIOSITY.</span>
+    <a class="back-top" href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
